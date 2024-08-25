@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Manrope:wght@200..800&display=swap');
+
+:root{
+    --Very_Dark_Grayish_Blue: hsl(217, 19%, 35%);
+    --Desaturated_Dark_Blue: hsl(214, 17%, 51%);
+    --Grayish_Blue: hsl(212, 23%, 69%);
+    --Light_Grayish_Blue: hsl(210, 46%, 95%);
+
+}
+
+body{
+    height: 110vh;
+    font-family: "Manrope", sans-serif;
+    background-color: var(--Light_Grayish_Blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 750px;
+    height: 300px;
+    background-color: white;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.07);
+}
+
+.image {
+    display: flex;
+    width: 42%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.mainImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left; 
+    border-radius: 10px 0 0 10px;
+
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.heading{
+    margin-left: 40px;
+    color: var(--Very_Dark_Grayish_Blue);
+    font-size: 21px;
+}
+
+.description{
+    font-size: 14px;
+    font-weight: 450;
+    color: var(--Desaturated_Dark_Blue);
+    margin-left: 40px;
+    margin-top: -5px;
+    line-height: 1.5;
+   
+}
+
+.profileSection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+   
+}
+
+.profileImg{
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    margin-left: -20px;
+}
+
+.profileInfo{
+    display: flex;
+    flex-direction: column;
+    margin-left: -120px;
+   
+}
+
+.name{
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--Very_Dark_Grayish_Blue);
+}
+
+.date{
+    color: var(--Grayish_Blue);
+    font-size: 13px;
+}
+
+.shareBtn {
+    width: 35px; /* Set width and height to make the button a circle */
+    height: 35px;
+    background-color: var(--Light_Grayish_Blue);
+    border-radius: 50%; 
+    margin-right: -60px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding: 0; 
+    color: var(--Desaturated_Dark_Blue);
+}
+
+.shareicon {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+.shareBtn:hover {
+    background-color: var(--Desaturated_Dark_Blue);
+}
+
+.shareBtn:hover .shareicon path {
+    fill: white; 
+}
+
+
+.sharesection{
+    width: 250px;
+    height: 55px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(217, 19%, 35%);
+    position: absolute;
+    left: 830px;
+    top: 320px;
+    box-shadow: 0 15px 50px var(--Grayish_Blue);
+    overflow: visible;
+    visibility: hidden;
+   
+}
+
+.show{
+    visibility: visible;
+}
+
+.arrow{
+    width: 20px;
+    height: 20px;
+    background-color:  hsl(217, 19%, 35%);
+    position: absolute;
+    top: 42px;
+    transform: rotate(45deg);
+    
+}
+
+.shareIcon{
+    margin-left: 10px;
+}
+
+.shareIcon:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.shareSpan{
+    color: var(--Grayish_Blue);
+    font-size: 14px;
+    font-weight: 550;
+    letter-spacing: 5px;
+    margin-right: 10px;
+}
+
